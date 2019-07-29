@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>welcome to memememegen</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Welcome to meme generator</h1>
+    <h2>best memes since ever</h2>
+    <img height = "200px" width="200px" src="https://store-images.microsoft.com/image/apps.59682.9007199266251377.11eabd37-a0d4-4a98-a6dc-6cd4ec6a02e3.33ff95a5-12b9-4036-9843-957c1b44cdd8?mode=scale&q=90&h=200&w=200&background=%230078D7" alt="">
+    <form method="post" action="/result">
+      <h2>Meme Options:</h2>
+      {% for url in imgs%}
+        <img src={{url}} height="100px">
+        <input type="radio" name="template" value="{{url}}"/>
+      {% endfor %}
+      <br>
+      Top Line Here
+      <input type="text" name="top-line"/>
+      <br>
+      Bottom Line Here
+      <input type="text" name="bottom-line"/>
+      <br>
+      <input type="submit" value="go"/>
+    </form>
+  </body>
+</html>

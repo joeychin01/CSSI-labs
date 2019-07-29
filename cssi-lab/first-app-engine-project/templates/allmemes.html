@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>hello</h1>
+    {% for meme in memes %}
+      <div class="meme" style = "background-image: url({{meme.pic_type}}); height:300px; width: 300px">
+        <h3 class="meme_text">{{meme.first_line}}</h3>
+        <h3 class="meme_text">{{meme.second_line}}</h3>
+      </div>
+      <br>
+    {% endfor %}
+    <a href="/">Return to meme creator</a>
+  </body>
+</html>
