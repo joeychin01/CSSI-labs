@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Lyrics - Lyric Giraffe</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+  <body>
+
+    <div id="webheader">
+      <img src="/images/giraffe.png">
+      <h1>Lyric Giraffe</h1>
+      <em><h2>For your lyric finding needs!</h2></em>
+    </div>
+
+    <div class="outer-container">
+      <div class="inner-container">
+        <h1>Input artist/song</h1>
+        <form method="post" >
+          Enter song name:
+          <input type="text" name="song_name" value="">
+          Enter artist name:
+          <input type="text" name="artist_name" value="">
+          <input type="submit" value="Go!">
+        </form>
+        <div id="inputLyricsBox">
+          <p> {{artist}} </p>
+          <p> {{song}} </p>
+          <p> {{lyrics}} </p>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

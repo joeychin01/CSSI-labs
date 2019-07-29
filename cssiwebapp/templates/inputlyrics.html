@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Lyrics - Lyric Giraffe</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+  <body>
+
+    <div id="webheader">
+      <a href="/"><img src="/images/giraffe.png"></a>
+      <h1>Lyric Giraffe</h1>
+      <em><h2>For your lyric finding needs!</h2></em>
+      <a href="/popularsearch"><img src="/images/charts.png"></a>
+    </div>
+
+    <div class="outer-container">
+      <div class="inner-container">
+
+        <h1>Search by Artist and Song</h1>
+        <form method="post" id="inputform-dir">
+          <span>Artist name:</span>
+          <input type="text" name="artist_name" required>
+          <span>Song name:</span>
+          <input type="text" name="song_name" required>
+          <button type="submit">
+            <span id="search">Search</span>
+          </button>
+        </form>
+
+        <div id="inputLyricsBox">
+          <div class="songdetails">
+            {% if track|string() != "" %}
+              <h1> "{{track}}" </h1>
+            {% else %}
+              <h1> {{error}} </h1>
+            {% endif %}
+            <h1> {{artist}} </h1>
+          </div>
+
+            {% for line in lyrics %}
+              {% if line == '' %}
+                <br>
+              {% else %}
+                <p>
+                  {{line}}
+                </p>
+              {% endif %}
+            {% endfor %}
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

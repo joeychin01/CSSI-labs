@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Popular Search - Lyric Giraffe</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+  <body>
+
+    <div id="webheader">
+      <a href="/"><img src="/images/giraffe.png"></a>
+      <h1>Lyric Giraffe</h1>
+      <em><h2>For your lyric finding needs!</h2></em>
+      <a href="/popularsearch"><img src="/images/charts.png"></a>
+    </div>
+
+    <div class="outer-container">
+      <div class="inner-popular">
+        <h1>Most Popular Searches</h1>
+        <br><br>
+        {% set i = 1 %}
+        {% for order in list %}
+            <h2 id="placements"><em>- {{i}} -</em></h2>
+            <h1>"{{order.track}}"<span style="color: white"> by </span><span style="color: orange">{{order.artist}}</span></h1>
+            <h2 id="popViews">Views: {{order.views}}<h2>
+            <br>
+            {% set i = i + 1 %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </body>
+</html>

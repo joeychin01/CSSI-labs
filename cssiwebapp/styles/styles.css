@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
+
+
+/* reset styles */
+html, body, h1, h2, h3, p, img, div {
+  margin: 0;
+  padding: 0;
+}
+
+/* style entire document */
+body {
+  font-family: "Sanchez", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background: url("/images/backgroundpattern.jpg"), #6F4A38;
+  background-repeat: repeat;
+}
+
+/* web header section */
+#webheader {
+  text-shadow: 2px 2px black;
+  font-size: 25px;
+  background: #6F4A38;
+  color: #EDCF8F;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100px;
+  border: 2px solid #EDCF8F;
+  opacity: 0.9;
+  margin-top: 20px;
+  position: relative;
+}
+#webheader h2 {
+  padding-top: 10px;
+  font-size: 15px;
+  color: white;
+}
+#webheader a:first-of-type img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  padding: 10px;
+  background-color: #EDCF8F;
+  border-right: 2px solid #EDCF8F;
+}
+#webheader a:last-of-type img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  padding: 10px;
+  background-color: #EDCF8F;
+  border-right: 2px solid #EDCF8F;
+}
+
+/* main body section */
+h5 {
+  display: inline;
+}
+h6 {
+  margin: 0px;
+}
+.playlist {
+  color: #1DB954;
+}
+
+
+.outer-container {
+  position: relative;
+  max-width: 1000px;
+  border: 2px solid #EDCF8F;
+  opacity: 0.9;
+  margin: 0 auto;
+  background: #EDCF8F;
+  margin-top: 20px;
+  text-align: left;
+  text-shadow: 2px 2px black;
+  margin-bottom: 20px;
+}
+.inner-container {
+  padding: 30px;
+  background-color: #6F4A38;
+}
+.inner-container h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #EDCF8F;
+}
+.inner-container h2 {
+  padding-top: 15px;
+  font-size: 20px;
+  color: #F0ECE1;
+}
+.inner-container p {
+  font-size: 16px;
+  padding: 15px 0 15px 15px;
+  color: #F0ECE1;
+}
+.inner-container h2:last-of-type {
+  text-align: center;
+}
+.outer-spotify {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  opacity: 0.9;
+  margin: 0 auto;
+  background: #EDCF8F;
+  margin-top: 20px;
+  text-align: left;
+  text-shadow: 2px 2px black;
+  margin-bottom: 20px;
+}
+.playlist-name {
+  background: #90ee90;
+  color: black;
+  text-shadow: 0px 0px black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.playlist-track {
+  opacity: 0.9;
+  padding-left: 20px;
+}
+.set-light {
+  background: #696969;
+}
+.set-dark {
+  background: #484848;
+}
+.inner-popular {
+  padding: 30px;
+  background-color: #6F4A38;
+}
+.inner-popular h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #EDCF8F;
+}
+.inner-popular h2 {
+  padding-top: 15px;
+  font-size: 25px;
+  color: #F0ECE1;
+  text-align: center;
+}
+#placements {
+  font-size: 40px;
+  color: #F0ECE1;
+  text-shadow: 2px 2px black;
+}
+
+/* style selection methods */
+#selection {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+#selection img {
+  height: 100px;
+  border-radius: 50px;
+  background: black;
+  border: 2px solid black;
+}
+#selection button {
+  background: #EDCF8F;
+  color: black;
+  text-shadow: 2px solid black;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid black;
+  height: 100px;
+  margin-right: 75px;
+}
+#selection span {
+    font-family: "Sanchez"
+}
+
+/* styling for song details (artist and song name) */
+.songdetails h1:first-of-type {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.songdetails h1:last-of-type {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #C97F4E;
+  margin-bottom: 20px;
+}
+/* input form submission styles */
+#inputform-dir {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background: #977359;
+  margin-top: 10px;
+}
+#inputform-dir span {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+#inputform-dir input {
+  margin-right: 30px;
+}
+#inputform-dir button {
+  background: #C97F4E;
+  color: white;
+  text-shadow: 2px solid black;
+  font-size: 15px;
+  border: 1px solid #C97F4E;
+}
+#inputdetails {
+  border: 2px solid black;
+}
+#inputform {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 2;
+  background: #977359;
+}
+#inputform span {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+#inputform input {
+  margin-right: 30px;
+}
+#inputform button {
+  background: #C97F4E;
+  color: white;
+  text-shadow: 2px solid black;
+  font-size: 15px;
+  border: 1px solid #C97F4E;
+}
+#inputform img {
+  height: 50px;
+}
+
+#inputLyricsBox p {
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+}
+#search {
+  font-family: "Sanchez";
+  text-shadow: 0px 0px;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  float: left;
+}
+
+
+.spotify {
+  width: 500px;
+  height: 610px;
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px #726d6d;
+}
+.lyrics {
+  width: 500px;
+  height: 610px;
+  background-color: #EDCF8F;
+  text-shadow: 2px 2px #F0ECE1;
+}
+.style-lyrics {
+  padding: 20px;
+}
+.style-lyrics h3:last-of-type {
+  padding-bottom: 10px;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.spotifysubmit {
+
+}
